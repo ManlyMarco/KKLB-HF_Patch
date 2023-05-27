@@ -53,18 +53,18 @@ Name: "Patch"; Description: "Unlock R18 content (adds Explicit Mode in main menu
 Source: "HelperLib.dll";                  DestDir: "{app}"                 ; Flags: dontcopy
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_Patch\vr\orig\*";         DestDir: "{app}"                 ; Flags: ignoreversion     recursesubdirs createallsubdirs solidbreak;   Components: Patch; Check: VersionIsVR
-Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}"                 ; Flags: ignoreversion     recursesubdirs createallsubdirs;   Components: Patch; Check: VersionIsNonVR
-Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}\NonVR"           ; Flags: ignoreversion     recursesubdirs createallsubdirs;   Components: Patch; Check: VersionIsSteamNonVR
-Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs createallsubdirs solidbreak;   Components: Patch; Check: VersionIsVR
-Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs createallsubdirs;   Components: Patch; Check: VersionIsNonVR
-Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}\NonVR"           ; Flags: onlyifdoesntexist recursesubdirs createallsubdirs;   Components: Patch; Check: VersionIsSteamNonVR
+Source: "Input\_Patch\vr\orig\*";         DestDir: "{app}"                 ; Flags: ignoreversion     recursesubdirs solidbreak;   Components: Patch; Check: VersionIsVR
+Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}"                 ; Flags: ignoreversion     recursesubdirs;   Components: Patch; Check: VersionIsNonVR
+Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}\NonVR"           ; Flags: ignoreversion     recursesubdirs;   Components: Patch; Check: VersionIsSteamNonVR
+Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs solidbreak;   Components: Patch; Check: VersionIsVR
+Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsNonVR
+Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}\NonVR"           ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsSteamNonVR
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\BepInEx_config\*";         DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak;   Components: BepInEx
 Source: "Input\BepInEx_config_nonvr\*";   DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx; Check: VersionIsSteamNonVR
 Source: "Input\BepInEx_config_dev\*";     DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx\Dev
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins" ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: Feature\SimpleUncensor
+Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins" ; Flags: ignoreversion;   Components: Feature\SimpleUncensor
 
 #include "components.iss"
 
