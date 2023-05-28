@@ -16,6 +16,8 @@ If the game is in Japanese, make sure you have the latest version and go to Sett
 - This patch works with both Steam and DLsite versions of the game (they are basically identical). It works on both VR and non-VR versions.
 - On Steam, you can run the game .exe directly if you don't want to be seen playing it on Steam.
 - To run the game without VR on Steam, you have to install the NonVR DLC from your Steam library. Afterwards you have to browse local game files and look for the "NonVR" folder and run `KoiKoiMonogatari.exe` (NOT `KoiKoiMonogatariVR.exe`).
+- None of the included mods modify game files. You can completely disable all mods by removing the `winhttp.dll` file and\or the `BepInEx` folder from the game directory.
+- If you want to make your own mods, check [BepInEx docs](https://docs.bepinex.dev) and [KKLB_SimpleUncensor source code](https://github.com/ManlyMarco/KKLB_SimpleUncensor).
 - There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk.
 - If you want to run the game under Wine/Proton (Linux, SteamOS, macOS, etc.), read [this](https://github.com/Mantas-2155X/illusion-wine-guide) and [this](https://docs.bepinex.dev/articles/advanced/proton_wine.html).*
 
