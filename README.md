@@ -1,4 +1,4 @@
-![preview](https://github.com/ManlyMarco/KKLB-HF_Patch/assets/39247311/8955141f-c1d0-4f5c-b177-8197b6501d8e)
+![KKLB_patch_preview](https://github.com/ManlyMarco/KKLB-HF_Patch/assets/39247311/0d79320f-2999-46e0-8b7d-4561f9246cbe)
 
 # HF Patch for KoiKoi Love Blossoms
 An unofficial patch for KoiKoi Love Blossoms (恋来い温泉物語, KoiKoiMonogatari) by Apricot Heart. It fully unlocks and uncensors the game and includes other useful mods.
