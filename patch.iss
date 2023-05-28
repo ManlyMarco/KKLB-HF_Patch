@@ -59,6 +59,8 @@ Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}\NonVR"           ; Fla
 Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs solidbreak;   Components: Patch; Check: VersionIsVR
 Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsNonVR
 Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}\NonVR"           ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsSteamNonVR
+; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins" ; Flags: ignoreversion solidbreak;   Components: Feature\SimpleUncensor
 
 #include "components.iss"
 
@@ -66,8 +68,6 @@ Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}\NonVR"           ; Fla
 Source: "Input\BepInEx_config\*";         DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak;   Components: BepInEx
 Source: "Input\BepInEx_config_nonvr\*";   DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx; Check: VersionIsSteamNonVR
 Source: "Input\BepInEx_config_dev\*";     DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx\Dev
-; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins" ; Flags: ignoreversion;   Components: Feature\SimpleUncensor
 
 [InstallDelete]
 ; Always not necessary
@@ -78,6 +78,10 @@ Type: files; Name: "{app}\NonVR\0Harmony.dll"
 Type: files; Name: "{app}\NonVR\BepInEx.dll"
 Type: files; Name: "{app}\NonVR\Mono.Cecil.dll"
 
+; Handle HF patch previously installed directly inside the NonVR folder
+Type: filesandordirs; Name: "{app}\NonVR\BepInEx"; Components: BepInEx
+Type: filesandordirs; Name: "{app}\NonVR\BepInEx_Shim_Backup"; Components: BepInEx
+Type: files; Name: "{app}\NonVR\Plugin Readme.md"
 Type: files; Name: "{app}\NonVR\version"
 
 ; Junk
@@ -89,8 +93,6 @@ Type: files; Name: "{app}\*.pdb"
 Type: files; Name: "{app}\changelog.txt"
 Type: files; Name: "{app}\HF_Patch_log.txt"
 Type: files; Name: "{app}\output_log.txt"
-Type: filesandordirs; Name: "{app}\NonVR\BepInEx"
-Type: filesandordirs; Name: "{app}\NonVR\BepInEx_Shim_Backup"
 Type: files; Name: "{app}\NonVR\*.log"
 Type: files; Name: "{app}\NonVR\*.pdb"
 Type: files; Name: "{app}\NonVR\changelog.txt"
