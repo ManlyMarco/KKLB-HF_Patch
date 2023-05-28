@@ -59,14 +59,15 @@ Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}\NonVR"           ; Fla
 Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs solidbreak;   Components: Patch; Check: VersionIsVR
 Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsNonVR
 Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}\NonVR"           ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsSteamNonVR
-; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include "components.iss"
+
+[Files]
 Source: "Input\BepInEx_config\*";         DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak;   Components: BepInEx
 Source: "Input\BepInEx_config_nonvr\*";   DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx; Check: VersionIsSteamNonVR
 Source: "Input\BepInEx_config_dev\*";     DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx\Dev
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins" ; Flags: ignoreversion;   Components: Feature\SimpleUncensor
-
-#include "components.iss"
 
 [InstallDelete]
 ; Always not necessary
@@ -77,6 +78,8 @@ Type: files; Name: "{app}\NonVR\0Harmony.dll"
 Type: files; Name: "{app}\NonVR\BepInEx.dll"
 Type: files; Name: "{app}\NonVR\Mono.Cecil.dll"
 
+Type: files; Name: "{app}\NonVR\version"
+
 ; Junk
 Type: filesandordirs; Name: "{app}\BepInEx\bepinex4_backup"
 Type: filesandordirs; Name: "{app}\BepInEx\cache"
@@ -86,6 +89,8 @@ Type: files; Name: "{app}\*.pdb"
 Type: files; Name: "{app}\changelog.txt"
 Type: files; Name: "{app}\HF_Patch_log.txt"
 Type: files; Name: "{app}\output_log.txt"
+Type: filesandordirs; Name: "{app}\NonVR\BepInEx"
+Type: filesandordirs; Name: "{app}\NonVR\BepInEx_Shim_Backup"
 Type: files; Name: "{app}\NonVR\*.log"
 Type: files; Name: "{app}\NonVR\*.pdb"
 Type: files; Name: "{app}\NonVR\changelog.txt"
