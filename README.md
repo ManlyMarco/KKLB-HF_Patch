@@ -3,7 +3,9 @@
 # HF Patch for KoiKoi Love Blossoms
 An unofficial patch for KoiKoi Love Blossoms (恋来い温泉物語, KoiKoiMonogatari) by Apricot Heart. It fully unlocks and uncensors the game and includes other useful mods.
 
-HF Patch does not contain the game, only mods. You have to buy the game separately. You can buy the game [on Steam](https://store.steampowered.com/app/1840350/KoiKoi_VR_Love_Blossoms/) or [on DLsite](https://www.dlsite.com/pro/work/=/product_id/VJ01000460.html). Both versions are pretty much identical. The purchase contains both VR and non-VR versions (non-VR version is available as free DLC on Steam).
+HF Patch does not contain the game, only mods. You have to buy the game separately. You can buy the game [on Steam](https://store.steampowered.com/app/1840350/KoiKoi_VR_Love_Blossoms/) or [on DLsite](https://www.dlsite.com/pro/work/=/product_id/VJ01000460.html). Both of these versions are pretty much identical and this patch will work no matter which version you buy.
+
+This game is available in both VR and non-VR (desktop) versions. By purchasing the game you will get both versions. Non-VR version is available as [free DLC on Steam](https://store.steampowered.com/app/2340340/DLCKoiKoi_Love_Blossoms_NonVR_Edition/), and as a separate download on DLsite.
 
 If the game is in Japanese, make sure you have the latest version and go to Settings (button with a cog icon in main menu) and select English in the dropdown setting at the bottom of the list.
 
