@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "KoiKoi Love Blossoms"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "1.0"
+#define VERSION "1.1"
 ;----------------------------------------------------------------------------------------------------
 #include "Assets\Header.iss"
 
@@ -21,10 +21,10 @@ Compression=lzma2/ultra64
 ;lzma2/ultra64 | zip | lzma2/fast
 LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
-LZMADictionarySize=208576
+LZMADictionarySize=262144
 LZMANumFastBytes=273
 LZMANumBlockThreads=14
-;DiskSpanning=yes
+DiskSpanning=yes
 DefaultDirName=C:\Program Files (x86)\Steam\steamapps\common\KoiKoiMonogatariVR\
 
 WindowResizable=yes
@@ -50,24 +50,21 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 Name: "Patch"; Description: "Unlock R18 content (adds Explicit Mode in main menu)"; Types: full extra custom bare none; Flags: fixed
 
 [Files]
-Source: "HelperLib.dll";                  DestDir: "{app}"                 ; Flags: dontcopy
+Source: "HelperLib.dll";                  DestDir: "{app}"      ; Flags: dontcopy
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_Patch\vr\orig\*";         DestDir: "{app}"                 ; Flags: ignoreversion     recursesubdirs solidbreak;   Components: Patch; Check: VersionIsVR
-Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}"                 ; Flags: ignoreversion     recursesubdirs;   Components: Patch; Check: VersionIsNonVR
-Source: "Input\_Patch\nonvr\orig\*";      DestDir: "{app}\NonVR"           ; Flags: ignoreversion     recursesubdirs;   Components: Patch; Check: VersionIsSteamNonVR
-Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs solidbreak;   Components: Patch; Check: VersionIsVR
-Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}"                 ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsNonVR
-Source: "Input\_Patch\nonvr\hpatch\*";    DestDir: "{app}\NonVR"           ; Flags: onlyifdoesntexist recursesubdirs;   Components: Patch; Check: VersionIsSteamNonVR
+Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs solidbreak; Components: Patch; Check: VersionIsVR
+Source: "Input\_Patch\nonvr\hpatch_v5\*"; DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsNonVR
+Source: "Input\_Patch\nonvr\hpatch_v5\*"; DestDir: "{app}\NonVR"; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsSteamNonVR
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins" ; Flags: ignoreversion solidbreak;   Components: Feature\SimpleUncensor
+Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion solidbreak;   Components: Feature\SimpleUncensor
 
 #include "components.iss"
 
 [Files]
-Source: "Input\BepInEx_config\*";         DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak;   Components: BepInEx
-Source: "Input\BepInEx_config_nonvr\*";   DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx; Check: VersionIsSteamNonVR
-Source: "Input\BepInEx_config_dev\*";     DestDir: "{app}"                 ; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx\Dev
+Source: "Input\BepInEx_config\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak;   Components: BepInEx
+Source: "Input\BepInEx_config_nonvr\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx; Check: VersionIsSteamNonVR
+Source: "Input\BepInEx_config_dev\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;   Components: BepInEx\Dev
 
 [InstallDelete]
 ; Always not necessary
@@ -83,6 +80,9 @@ Type: filesandordirs; Name: "{app}\NonVR\BepInEx"; Components: BepInEx
 Type: filesandordirs; Name: "{app}\NonVR\BepInEx_Shim_Backup"; Components: BepInEx
 Type: files; Name: "{app}\NonVR\Plugin Readme.md"
 Type: files; Name: "{app}\NonVR\version"
+
+; Clear old graphics settings just in case
+Type: files; Name: "{app}\BepInEx\config\keelhauled.graphicssettings.cfg"
 
 ; Junk
 Type: filesandordirs; Name: "{app}\BepInEx\bepinex4_backup"
