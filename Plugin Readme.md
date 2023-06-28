@@ -28,12 +28,17 @@
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/FPSCounter
 
-# Graphics Settings v1.2.1
+# Graphical tweaks for KoiKoi Love Blossoms v1.0
+- Short description: Improves the best quality setting (Performance = 1)
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/KKLB_Tweaks
+
+# Graphics Settings v1.3
 - Short description: More settings to make graphics more or less demanding
 - Author(s):         https://github.com/BepInEx/BepInEx.GraphicsSettings
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
 
-# LoveMachine v3.8.1
+# LoveMachine v3.11.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
