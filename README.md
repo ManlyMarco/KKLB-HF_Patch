@@ -14,10 +14,9 @@ If the game is in Japanese, make sure you have the latest version and go to Sett
 ## Important notes, please read
 - The included uncensor is very basic: It removes the heart censors, replaces female body texture with a custom one, and changes the meat stick color to match the rest of the male body. It doesn't modify character models and the vag texture is very basic (it can be edited by hand, it's inside the `BepInEx\plugins` folder).
 - HF Patch does not contain the full game, paid expansions or any other pirated content. You have to buy the game and expansions separately.
-- If you want to use the Non-VR mode on Steam, install the free Non-VR DLC from your steam library before installing this patch.
 - This patch works with both Steam and DLsite versions of the game (they are basically identical). It works on both VR and non-VR versions.
+- To run the game without VR on Steam, you have to install the NonVR DLC from your Steam library. Afterwards you have to browse local game files and look for the "NonVR" folder and run `KoiKoiMonogatari.exe` (NOT `KoiKoiMonogatariVR.exe`). Warning: Even if you want to only play in the NonVR mode, you still have to install the patch directly inside "KoiKoiMonogatariVR" and not in the "NonVR" folder.
 - On Steam, you can run the game .exe directly if you don't want to be seen playing it on Steam.
-- To run the game without VR on Steam, you have to install the NonVR DLC from your Steam library. Afterwards you have to browse local game files and look for the "NonVR" folder and run `KoiKoiMonogatari.exe` (NOT `KoiKoiMonogatariVR.exe`).
 - None of the included mods modify game files. You can completely disable all mods by removing the `winhttp.dll` file and\or the `BepInEx` folder from the game directory.
 - If you want to make your own mods, check [BepInEx docs](https://docs.bepinex.dev) and [KKLB_SimpleUncensor source code](https://github.com/ManlyMarco/KKLB_SimpleUncensor).
 - There is no warranty on this patch or on any of the included mods. You are installing this patch at your own risk.
