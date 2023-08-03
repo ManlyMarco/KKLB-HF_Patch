@@ -8,12 +8,12 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# Cheat Tools v3.2.1
+# Cheat Tools v3.3
 - Short description: In-game trainer, can unlock all chapters and clothes, press F12 and look left
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
 
-# Configuration Manager v18.0
+# Configuration Manager v18.0.1
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -38,7 +38,7 @@
 - Author(s):         https://github.com/BepInEx/BepInEx.GraphicsSettings
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
 
-# LoveMachine v3.11.0
+# LoveMachine v3.12.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -53,7 +53,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# Runtime Unity Editor v4.2
+# Runtime Unity Editor v5.0
 - Short description: Tool for making arbitrary modifications to the game, press F12 or Pause key
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor

@@ -1,8 +1,8 @@
 [Components]
 Name: "BepInEx";                               Description: "BepInEx v5.4.21.0 (Plugin framework)"                                                 ; Types: full extra custom bare; Flags: fixed
-Name: "BepInEx\Dev";                           Description: "Show log window (Can be changed later from F1 settings, search for console)"
+Name: "BepInEx\Dev";                           Description: "Show log window (Can be changed later from F1 settings, search for console)"          
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v1.1.1 (Allows plugins to show messages in top left corner of the game)"; Types: full extra custom bare
-Name: "BepInEx\ConfigurationManager";          Description: "Configuration Manager v18.0 (Can change plugin settings. Press F1 to open, not visible inside HMD)"; Types: full extra custom bare
+Name: "BepInEx\ConfigurationManager";          Description: "Configuration Manager v18.0.1 (Can change plugin settings. Press F1 to open, not visible inside HMD)"; Types: full extra custom bare
 Name: "BepInEx\CatchUnityEventExceptions";     Description: "Catch Unity Event Exceptions v1.0 (Prevents some bugs from affecting the game or plugins)"; Types: full extra
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Name: "Content";                               Description: "Additional content (Needed to properly load most character cards and scenes)"         ; Types: full extra
@@ -15,12 +15,12 @@ Name: "Feature\EnableResize";                  Description: "Enable Resize v3.0 
 Name: "Feature\MuteInBackground";              Description: "Mute In Background v1.1 (Mute the game when not focused)"                             ; Types: full extra
 Name: "Feature\KKLB_Tweaks";                   Description: "Graphical tweaks for KoiKoi Love Blossoms v1.0 (Improves the best quality setting (Performance = 1))"; Types: full extra
 Name: "Feature\GraphicsSettings";              Description: "Graphics Settings v1.3 (More settings to make graphics more or less demanding)"       ; Types: full extra
-Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.11.0 (Adds support for some computer-controlled sex toys)"             ; Types: extra
+Name: "Feature\LoveMachine";                   Description: "LoveMachine v3.12.0 (Adds support for some computer-controlled sex toys)"             ; Types: extra
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FPS";                              Description: "FPS Counter v3.1 (Useful for performance testing)"                                    ; Types: full extra
-Name: "MISC\Trainer";                          Description: "Runtime Unity Editor v4.2 (Tool for making arbitrary modifications to the game, press F12 or Pause key)"; Types: full extra
-Name: "MISC\Trainer\CheatTools";               Description: "Cheat Tools v3.2.1 (In-game trainer, can unlock all chapters and clothes, press F12 and look left)"; Types: full extra
+Name: "MISC\Trainer";                          Description: "Runtime Unity Editor v5.0 (Tool for making arbitrary modifications to the game, press F12 or Pause key)"; Types: full extra
+Name: "MISC\Trainer\CheatTools";               Description: "Cheat Tools v3.3 (In-game trainer, can unlock all chapters and clothes, press F12 and look left)"; Types: full extra
 
 [Files]
 Source: "Input\_Plugins\_out\BepInEx.ConfigurationManager\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\ConfigurationManager; Excludes: "manifest.xml"

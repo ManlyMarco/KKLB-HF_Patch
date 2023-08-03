@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "KoiKoi Love Blossoms"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "1.1"
+#define VERSION "1.2"
 ;----------------------------------------------------------------------------------------------------
 #include "Assets\Header.iss"
 
@@ -54,8 +54,8 @@ Source: "HelperLib.dll";                  DestDir: "{app}"      ; Flags: dontcop
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs solidbreak; Components: Patch; Check: VersionIsVR
-Source: "Input\_Patch\nonvr\hpatch_v5\*"; DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsNonVR
-Source: "Input\_Patch\nonvr\hpatch_v5\*"; DestDir: "{app}\NonVR"; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsSteamNonVR
+Source: "Input\_Patch\nonvr\hpatch_v6\*"; DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsNonVR
+Source: "Input\_Patch\nonvr\hpatch_v6\*"; DestDir: "{app}\NonVR"; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsSteamNonVR
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion solidbreak;   Components: Feature\SimpleUncensor
 
