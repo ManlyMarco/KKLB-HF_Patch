@@ -8,13 +8,13 @@ customInstall=Custom installation
 MsgInvalidModsDetected=WARNING - Outdated or useless plugins/files were detected in your BepInEx directory. To avoid issues all mods will be deleted.
 MsgKplugDetected=WARNING - KoikPlugins was detected and will be removed if you start installation to avoid potential compatibility issues (settings will not be removed).%n%nPlease follow KoikPlugins manual on how to install it again after patching is done.
 MsgIncompatibleModsDetected=WARNING - Incompatible mods have been detected in your game folder! You are using very outdated mods or mods from other games, which WILL cause problems. All old mods will have to be removed to fix this.
-MsgExeNotFound=WARNING - VR Kanojo files were not found in selected directory. This patch has to be installed directly to the main game directory in order to work properly.%n%nAre you sure that this directory is correct?
+MsgExeNotFound=WARNING - KoiKoiMonogatari files were not found in selected directory. This patch has to be installed directly to the main game directory in order to work properly.%n%nAre you sure that this directory is correct?
 MsgMissingGameFiles=ERROR - Critical game files are missing, make sure this is the game directory. If the directory is correct you have to reinstall the game.
 MsgExtractedZipmod=WARNING - Most likely a sideloader mod was extracted inside the game directory. Some game files might now be corrupted.%n%nRepair will be attempted, but if you still have problems you will have to reinstall the game.
 MsgEmotionCreatorsDetected=ERROR - EmotionCreators files have been detected! If you installed EmotionCreators to the same folder as Koikatsu, you have broken Koikatsu game files. To fix this you will need to reinstall both games to separate directories!
 
 
-MsgDeepPath=Your game is in a very deeply nested folder, which can cause serious issues or even prevent the game from starting.%n%nPlease move your game folder to a simpler path like for example "C:\Games\Koikatsu" and try to run this patch again.
+MsgDeepPath=Your game is in a very deeply nested folder, which can cause serious issues or even prevent the game from starting.%n%nPlease move your game folder to a simpler path like for example "C:\Games\KoiKoiMonogatari" and try to run this patch again.
 
 ;RunGame=&Run VR Kanojo
 ;RunWiki=Open VR Kanojo wiki (FAQ, English manual)
@@ -51,12 +51,12 @@ jp.customInstall=カスタムインストール
 jp.MsgInvalidModsDetected=警告 - あなたのBepInExディレクトリで古いまたは無用なプラグイン/ファイルが検出されました。 問題を避けるために、すべてのmodは削除されます。
 jp.MsgKplugDetected=警告 - 互換性の問題を回避するためにインストールを開始すると、KoikPluginsは削除されます（設定は削除されません）。%n%n後でそれをインストールする方法についてはKoikPluginsマニュアルに従ってください
 jp.MsgIncompatibleModsDetected=警告 - あなたのゲームフォルダで互換性のない改造が検出されました！ あなたは非常に古くなったモッズを使っているか、VR Kanojoがの他のゲームのモッズを使っています。 これを修正するには、古いモッズをすべて削除する必要があります。
-jp.MsgExeNotFound=警告 - VR Kanojoが選択されたディレクトリに見つかりませんでした。 正しく動作させるためには、このパッチをVR Kanojoがのメインゲームディレクトリに直接インストールする必要があります。%n%nこのディレクトリが正しいことを確認していますか？
+jp.MsgExeNotFound=警告 - KoiKoiMonogatariが選択されたディレクトリに見つかりませんでした。 正しく動作させるためには、このパッチをVR Kanojoがのメインゲームディレクトリに直接インストールする必要があります。%n%nこのディレクトリが正しいことを確認していますか？
 jp.MsgMissingGameFiles=エラー - 重要なゲームファイルがありません。これがゲームディレクトリであることを確認してください。 ディレクトリが正しい場合は、ゲームを再インストールする必要があります。
 jp.MsgExtractedZipmod=警告 - Sideloader modがゲームディレクトリ内に抽出されたようです。 一部のゲームファイルが破損している可能性があります。%n%n修復を試みますが、それでも問題が解決しない場合は、ゲームを再インストールする必要があります。
 jp.MsgEmotionCreatorsDetected=エラー - 「エモーション・クリエイター」を「コイカツ」と同じフォルダにインストールした場合は、「コイカツ」ゲームファイルが壊れています。修正するには、両方のゲームを別々のディレクトリに再インストールする必要があります。
 
-jp.MsgDeepPath=あなたのゲームは非常に深いディレクトリにあります。これは深刻な問題を引き起こし、ゲームの開始を妨げることさえあります。%n%nゲームフォルダを、たとえば「C:\Games\Koikatu」のような単純なパスに移動して、このパッチをもう一度実行してみてください。
+jp.MsgDeepPath=あなたのゲームは非常に深いディレクトリにあります。これは深刻な問題を引き起こし、ゲームの開始を妨げることさえあります。%n%nゲームフォルダを、たとえば「C:\Games\KoiKoiMonogatari」のような単純なパスに移動して、このパッチをもう一度実行してみてください。
 
 ;jp.RunGame=ゲームを始める
 ;jp.RunWiki=オープン英語AI-Shoujo/VR Kanojoのwiki（FAQ、マニュアル）
