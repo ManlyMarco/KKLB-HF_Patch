@@ -6,7 +6,7 @@
 ;--------------------------------------------Full game name for naming patch itself and desktop icons
 #define NAME "KoiKoi Love Blossoms"
 ;----------------------------------------------------------------------------Current HF Patch version
-#define VERSION "1.2"
+#define VERSION "1.3"
 ;----------------------------------------------------------------------------------------------------
 #include "Assets\Header.iss"
 
@@ -53,9 +53,10 @@ Name: "Patch"; Description: "Unlock R18 content (adds Explicit Mode in main menu
 Source: "HelperLib.dll";                  DestDir: "{app}"      ; Flags: dontcopy
 Source: "Plugin Readme.md";               DestDir: "{app}"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_Patch\vr\hpatch\*";       DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs solidbreak; Components: Patch; Check: VersionIsVR
-Source: "Input\_Patch\nonvr\hpatch_v6\*"; DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsNonVR
-Source: "Input\_Patch\nonvr\hpatch_v6\*"; DestDir: "{app}\NonVR"; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsSteamNonVR
+Source: "Input\_Patch\vr\hpatch_v7\*";       DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs solidbreak; Components: Patch; Check: VersionIsVR
+;innosetup is deduplicating these two, only one copy of files is stored
+Source: "Input\_Patch\nonvr\hpatch_v7\*"; DestDir: "{app}"      ; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsNonVR
+Source: "Input\_Patch\nonvr\hpatch_v7\*"; DestDir: "{app}\NonVR"; Flags: onlyifdoesntexist recursesubdirs;            Components: Patch; Check: VersionIsSteamNonVR
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\KKLB_SimpleUncensor_Texture.png"; DestDir: "{app}\BepInEx\plugins"; Flags: ignoreversion solidbreak;   Components: Feature\SimpleUncensor
 
@@ -135,7 +136,7 @@ Filename: "notepad.exe"; Parameters: """{app}\Plugin Readme.md"""; Description: 
 
 Filename: "https://github.com/ManlyMarco/KKLB-HF_Patch"; Description: "Latest releases and source code"; Flags: shellexec runasoriginaluser postinstall unchecked nowait skipifsilent
 
-Filename: "https://discord.gg/F3bDEFE"; Description: "{cm:RunDiscord}"; Flags: shellexec runasoriginaluser postinstall unchecked nowait skipifsilent;
+Filename: "https://discord.gg/hevygx6"; Description: "{cm:RunDiscord}"; Flags: shellexec runasoriginaluser postinstall unchecked nowait skipifsilent;
 
 Filename: "https://www.patreon.com/ManlyMarco"; Description: "ManlyMarco Patreon (Creator of this patch)"; Flags: shellexec runasoriginaluser postinstall unchecked nowait skipifsilent;
 
@@ -173,7 +174,7 @@ external 'RemoveModsExceptModpacks@files:HelperLib.dll stdcall';
 
 function VersionIsVR(): Boolean;
 begin
-  Result := FileExists(ExpandConstant('{app}\KoiKoiMonogatariVR_Data\resources.assets'));
+  Result := FileExists(ExpandConstant('{app}\KoiKoiMonogatariVR_Data\resources.resource')); // Have to use resources.resource because this is the only file that exists both in Steam and non-Steam releases
 end;
 function VersionIsNonVR(): Boolean;
 begin

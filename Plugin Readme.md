@@ -1,4 +1,4 @@
-# BepInEx v5.4.21.0
+# BepInEx v5.4.23.1
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -13,7 +13,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
 
-# Configuration Manager v18.0.1
+# Configuration Manager v18.4
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -38,7 +38,7 @@
 - Author(s):         https://github.com/BepInEx/BepInEx.GraphicsSettings
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
 
-# LoveMachine v3.12.0
+# LoveMachine v3.20.0
 - Short description: Adds support for some computer-controlled sex toys
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -53,7 +53,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# Runtime Unity Editor v5.0
+# Runtime Unity Editor v5.5.1
 - Short description: Tool for making arbitrary modifications to the game, press F12 or Pause key
 - Author(s):         https://github.com/ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
